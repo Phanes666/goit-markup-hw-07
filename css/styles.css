@@ -27,7 +27,7 @@ html {
   --modal-idx: 100;
 }
 
-.body {
+body {
   font-family: "Roboto", sans-serif;
 
   background-color: var(--color-back);
@@ -66,13 +66,7 @@ button {
   padding: 0;
   margin: 0;
 }
-.header-nav-link.active {
-  color: var(--bg-color-darkblue-hover);
-}
-.header-nav-link:hover,
-.header-nav-link:focus {
-  color: #404bbf;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -86,6 +80,35 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* styles bloks */
+
+.container {
+  /* basic styles */
+  min-width: 320px;
+  max-width: 428px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* Tablet screen */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Desktop screen */
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+
 
 /* HEADER */
 .header-container {
@@ -147,6 +170,15 @@ button {
 
 .header-nav-link.active::after {
   background-color: #404bbf;
+}
+
+
+.header-nav-link.active {
+  color: var(--bg-color-darkblue-hover);
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #404bbf;
 }
 /* ................ */
 .header-logo {
@@ -333,7 +365,7 @@ button {
 }
 
 .two-section {
-  padding-bottom: 120px;
+  padding-bottom: 120px 0;
 }
 .two-section-title {
   font-family: "Roboto";
@@ -362,7 +394,8 @@ button {
 
 .three-section {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 .three-section-title {
   font-family: "Roboto";
@@ -454,8 +487,8 @@ button {
 
 /* Four Section Customers */
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
+  
 }
 .four-section-title {
   font-family: "Roboto";
@@ -896,13 +929,6 @@ letter-spacing: 0.04em; */
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* styles bloks */
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 /* MODAL WINDOW */
 
