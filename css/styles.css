@@ -316,8 +316,10 @@ button {
 
 /* section One Feature */
 .features {
+  display: flex;
   align-items: center;
   padding: 0 15px;
+  /* max-width: 428px; */
 }
 .feature-section {
   padding: 120px 0;
@@ -326,28 +328,95 @@ button {
 .one-section-content-title {
   font-family: "Roboto";
   font-style: normal;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+ 
+  letter-spacing: 0.02em;
+  color: var(--color-txt);
+
+  margin: 0 auto;
+  margin-bottom: 8px;
+  
+  text-align: center;
+ 
+  text-transform: capitalize;
+  
+}
+/* table */
+@media only screen and (min-width: 768px) {
+  .one-section-content-title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+  }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1158px) {
+  .one-section-content-title {
+    font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--color-txt);
-  margin: 0 auto;
-  margin-bottom: 8px;
-}
-.one-section-text {
-  font-style: normal;
 
+
+letter-spacing: 0.02em;
+
+  }
+}
+
+
+
+.one-section-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin: 0 auto;
 }
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+  .one-section-text {
+    
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1158px) {
+  .one-section-text {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+  }
+}
+
+
+
+/* MOBILE */
 .one-section-list {
   
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
-  row-gap: 72px;
+  
+  
+  column-gap: var(--indent-vertical24col);
+  row-gap: var(--indent-horizontal72row);
   text-align: center;
   justify-content: center;
 
@@ -357,17 +426,37 @@ button {
 }
 
 
-
-
-
-
 .one-section-item {
-  flex-basis: calc((100% - 72px) / 1); 
+  max-width: 396px;
+
+ flex-basis: calc((100% - var(--indent-vertical24col))/ var(--items));
+}
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .one-section-list  {
+    width: 356px;
+    --items: 2;
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  .one-section-item {
+    
+    flex-basis: calc((100% - 1 * var(--indent-vertical24col)) / 2);
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1158px) {
+  .one-section-list  {
+    width: 264px;
+    --items: 4;
+  }
 }
 /* FEATURE ICONS */
 
 .container-icons {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background: #f4f4fd;
@@ -376,10 +465,29 @@ button {
   height: 112px;
   margin-bottom: 8px;
 }
+
+
+@media only screen and (min-width: 1158px) {
+  .container-icons {
+    display: flex;
+   
+  
+    
+  }
+}
+
 .feature-icon {
   display: flex;
   justify-content: center;
 }
+
+
+
+
+
+
+
+
 
 /* section Two What are we doing */
 .awd-container {
