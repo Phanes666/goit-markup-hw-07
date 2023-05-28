@@ -529,7 +529,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-background/bg_mob@2x.jpg);
+      url(../images/hero-background/bg_mob@2x.webp);
   }
 }
 
@@ -539,7 +539,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-background/bg_tabl@1x.jpg);
+      url(../images/hero-background/bg_tabl@1x.webp);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -549,7 +549,7 @@ button {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-background/bg_tabl@2x.jpg);
+        url(../images/hero-background/bg_tabl@2x.webp);
     }
   }
 }
@@ -559,7 +559,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-background/bg_desk@1x.jpg);
+      url(../images/hero-background/bg_desk@1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -570,7 +570,7 @@ button {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero-background/bg_desk@2x.jpg);
+        url(../images/hero-background/bg_desk@2x.webp);
     }
   }
 }
